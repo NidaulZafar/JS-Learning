@@ -108,90 +108,74 @@ Complete the `createObservable()` function as follows:
 
 
 
-function createObservable() {
-  const subscribers = [];
-  return {
-    subscribe: function (subscriber) {
-      subscribers.push(subscriber)// TODO complete this function
-    },
-    notify: function (message) {
-      // TODO complete this function
-      subscribers.forEach((subscriber) => {
-        subscriber(message);
-      })
-    },
-  };
-}
+// function createObservable() {
+//   const subscribers = [];
+//   return {
+//     subscribe: function (subscriber) {
+//       subscribers.push(subscriber)// TODO complete this function
+//     },
+//     notify: function (message) {
+//       // TODO complete this function
+//       subscribers.forEach((subscriber) => {
+//         subscriber(message);
+//       })
+//     },
+//   };
+// }
 
 
 
 
-// A candidate subscriber function
-function consoleUpperCase(message) {
-  console.log(message.toUpperCase());
-}
+// // A candidate subscriber function
+// function consoleUpperCase(message) {
+//   console.log(message.toUpperCase());
+// }
 
-// Another candidate subscriber function
-function consoleLowerCase(message) {
-  console.log(message.toLowerCase());
-}
+// // Another candidate subscriber function
+// function consoleLowerCase(message) {
+//   console.log(message.toLowerCase());
+// }
 
-// Create an observable object
-const observable = createObservable();
+// // Create an observable object
+// const observable = createObservable();
 
-// Add three subscribers
-observable.subscribe(console.log);
-observable.subscribe(consoleUpperCase);
-observable.subscribe(consoleLowerCase);
+// // Add three subscribers
+// observable.subscribe(console.log);
+// observable.subscribe(consoleUpperCase);
+// observable.subscribe(consoleLowerCase);
 
-// Send a message to all current subscribers
-observable.notify("Let's see what happens here!");
-// Let's see what happens here! (console.log subscriber)
-// LET'S SEE WHAT HAPPENS HERE! (consoleUpperCase subscriber)
-// let's see what happens here! (consoleLowerCase subscriber)
+// // Send a message to all current subscribers
+// observable.notify("Let's see what happens here!");
+// // Let's see what happens here! (console.log subscriber)
+// // LET'S SEE WHAT HAPPENS HERE! (consoleUpperCase subscriber)
+// // let's see what happens here! (consoleLowerCase subscriber)
 
-function asd(a){
-let digits = (""+a).split("");
-console.log(digits);
-}
-function secondFunction(a){
+// function asd(a){
+// let digits = (""+a).split("");
+// console.log(digits);
+// }
+// function secondFunction(a){
 
-  let digits = Array.from(a.toString()).map(Number);
-console.log(digits);
-}
-asd(10);
-asd(931)
-asd(193278)
-secondFunction(10);
-secondFunction(931)
-secondFunction(193278)
+//   let digits = Array.from(a.toString()).map(Number);
+// console.log(digits);
+// }
+// asd(10);
+// asd(931)
+// asd(193278)
+// secondFunction(10);
+// secondFunction(931)
+// secondFunction(193278)
 
-function newFunc(a) {
+// function newFunc(a) {
    
-console.log(a.slice(3));
-}
-newFunc("'abcdefg")
-newFunc("1234")
-newFunc("fgedcba")
+// console.log(a.slice(3));
+// }
+// newFunc("'abcdefg")
+// newFunc("1234")
+// newFunc("fgedcba")
 
-// let string = "hello"
-// console.log(string.charAt(2))
-
-
-//  After polishing my skills in web development from HackYourFuture,
-//   I can proudly claim that I am a web developer. I am eagerly looking forward to
-// an opportunity where I can be part of a distinguished team to showcase
-// my talents and continue learning practically from my superiors and more
-// experienced faculty. I can work hard, have a high motivation to learn;
-// disciplined; open-minded and punctual. Apart from that, I am an avid
-// traveler and a passionate reader with a keen interest in languages and
-// technology.My hobbies include swimming, driving and playing chess
+// // let string = "hello"
+// // console.log(string.charAt(2))
 
 
-// Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-//   sed do eiusmod tempor incididunt ut labore et dolore magna
-// aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco
-//  laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure
-// dolor in reprehenderit in voluptate velit esse cillum dolore eu 
-// fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident,
-//   sunt in culpa qui officia deserunt mollit anim id est laborum.
+
