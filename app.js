@@ -177,5 +177,22 @@ Complete the `createObservable()` function as follows:
 // // let string = "hello"
 // // console.log(string.charAt(2))
 
+// Setup
+function phoneticLookup(val) {
+  let result = "";
 
+  // Only change code below this line
+  const lookup = {
+    "alpha": "Adams",
+    "bravo": "Boston",
+    "charlie": "Chicago",
+    "delta": "Denver",
+    "echo": "Easy",
+    "foxtrot": "Frank"
+  }
+  result = lookup[val];
+  // Only change code above this line
+  console.log(result);
+}
 
+phoneticLookup("charlie");
